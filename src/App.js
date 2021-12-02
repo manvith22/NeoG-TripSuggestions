@@ -95,7 +95,9 @@ function App() {
 
   return (
     <div className="App">
-      <nav>Trip Suggestions via Seasons</nav>
+      <nav className="navbar">
+        <h2>Trip Suggestions via Seasons</h2>
+      </nav>
       <div className="container">
         <div className="options">
           <h3 classname="seasons">Select Season</h3>

@@ -1,4 +1,95 @@
-img {
+
+
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+  
+  .navbar {
+    height: 40px;
+    padding: 1%;
+    background-color: #eb7434;
+    color: white;
+    text-align: center;
+  }
+  img {
     max-width: 200px;
     max-height: 200px;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .food-list {
+    list-style: none;
+  }
+  .category-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    margin: auto;
+    justify-content: center;
+  }
+  .options-details,
+  .options {
+    width: 65%;
+    margin: auto;
+    padding: 1%;
+  }
+  .food-list {
+    margin-top: 2%;
+  }
+  .trip {
+    width: 90%;
+    margin: auto;
+  }
+  .list-item {
+    display: inline-block;
+    margin: 20px;
+    padding: 5px;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    border: solid 1px #eb7434;
+    border-radius: 6%;
+    text-transform: capitalize;
+  }
+  .list-item:hover,
+  .list-item:active {
+    cursor: pointer;
+    background-color: #eb7434;
+    color: white;
+    border: solid 1px white;
+  }
+  .trip-details {
+    margin: 5%;
+    padding: 2%;
+    background-color: #ebbc75;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .details-box {
+    margin: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  @media screen and (max-width: 550px) {
+    .list-item {
+      margin: 5px;
+      padding: 3px;
+      width: 80px;
+    }
+    .show-food,
+    .options {
+      width: 100%;
+    }
+    .food-details {
+      justify-content: center;
+    }
   }
